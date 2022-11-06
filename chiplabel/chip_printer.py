@@ -117,7 +117,7 @@ class ChipPrinter:
                     charWidth = textSizeX / len(pinName)
                     xStart = x + (invertRange[0] * charWidth)
                     xEnd = x + (invertRange[1] * charWidth)
-                    draw.line([(xStart,y-offsetY), (xEnd, y-offsetY)])
+                    draw.line([(xStart,y-offsetY), (xEnd, y-offsetY)], width=2)
 
     def _get_indent_size(self):
         return self._mm_to_pixel(self.config['indentSize'])
